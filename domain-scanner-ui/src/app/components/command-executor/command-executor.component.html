@@ -1,0 +1,12 @@
+<div class="command-executor">
+    <div class="full-width">
+        <mat-form-field appearance="outline" class="full-width-input" color="accent">
+            <mat-label>Enter Attack Vector</mat-label>
+            <input matInput [(ngModel)]="command" placeholder="nmap -sC -vv <target-ip-address>">
+                <button matSuffix mat-icon-button aria-label="Clear" (click)="execute()" color="accent">
+                    <mat-icon>play_circle</mat-icon>
+                  </button>
+          </mat-form-field>
+    </div>
+   
+</div>

@@ -1,0 +1,16 @@
+---
+version: "3.9"
+services:
+  domain-scanner-app:
+    container_name: domain-scanner-app
+    build:
+      context: ./domain-scanner-app
+      dockerfile: Dockerfile
+  domain-scanner-ui:
+    container_name: domain-scanner-ui
+    build:
+      context: ./domain-scanner-ui
+      dockerfile: Dockerfile
+    ports:
+      - 9090:80
+

@@ -1,0 +1,11 @@
+{
+    "/output": {
+        "target": "http://domain-scanner-app:8080",
+        "ws": true,
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/execute/nmap": {
+        "target": "http://domain-scanner-app:8080"
+    }
+}
